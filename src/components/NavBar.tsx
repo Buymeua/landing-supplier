@@ -55,7 +55,7 @@ export default function NavBar() {
             }
           </div>
           <div>
-            <button className="hidden sm:flex max-h-[40px] bg-white font-medium text-base text-[#18191A] rounded-2xl py-3 px-4  gap-2 items-center">
+            <button className="hidden transition-opacity duration-150 hover:opacity-80 ease-in-out sm:flex max-h-[40px] bg-white font-medium text-base text-[#18191A] rounded-2xl py-3 px-4  gap-2 items-center">
               <span>Telegram </span>
               <TgIcon />
             </button>

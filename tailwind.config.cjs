@@ -49,7 +49,7 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage:{
-				"bg-pattern" : "url('/assets/bg/pattern.png')"
+				"pattern" : "url('src/assets/bg/pattern.png')"
 			}
 		},
 	},
