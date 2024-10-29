@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { MouseParallax } from "react-just-parallax";
 
-
 export const Gradient = () => {
     return (
         <>
@@ -10,7 +9,6 @@ export const Gradient = () => {
         </>
     );
 };
-
 
 const Rings = () => {
     return (
@@ -31,9 +29,8 @@ export const BackgroundCircles = ({ parallaxRef }) => {
     }, []);
 
     return (
-        <div className="absolute left-0 lg:left-1/2 z-10  w-full lg:w-[78rem] aspect-square -translate-x-1/2  ">
-
-            <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
+        <div className="absolute left-0 lg:left-1/2 z-10 w-full lg:w-[78rem] aspect-square -translate-x-1/2 overflow-hidden">
+            <MouseParallax strength={0.2} parallaxContainerRef={parallaxRef}>
                 <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">
                     <div
                         className={`w-2 h-2 -ml-1 -mt-36 bg-gradient-to-b from-[#ab0000] to-[#da1212] rounded-full transition-transform duration-500 ease-out ${

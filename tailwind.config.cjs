@@ -50,7 +50,13 @@ module.exports = {
 		extend: {
 			backgroundImage:{
 				"pattern" : "url('src/assets/bg/pattern.png')"
-			}
+			},
+			boxShadow: {
+				'orange-500': '0 0 4px #FF5029',
+				'green-500': '0 0 4px #61FF29',
+				'cyan-500': '0 0 4px #29FFFF',
+				'purple-500': '0 0 4px #EE29FF',
+			},
 		},
 	},
 	plugins: [],
