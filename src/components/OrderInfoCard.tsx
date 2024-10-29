@@ -83,7 +83,7 @@ const OrderInfoCard = () => {
             <CartIcon />
             <div className='flex flex-col gap-1'>
                 <h2 className="text-lg text-[#F0F0F0] font-medium">Оформлення замовлень</h2>
-                <p className="text-[#787878] font-normal text-base">
+                <p className="text-[#787878] font-light text-base">
                     Автопідрахунок виплат, який не дасть вам помилитись
                 </p>
             </div>
@@ -95,6 +95,10 @@ const OrderInfoCard = () => {
                         ref={itemRefs.current[index]}
                         className="flex cursor-pointer border border-[#373737] items-center justify-between p-3 rounded-lg bg-[#1E1F1F]"
                         initial={{ opacity: 0, y: 10 }}
+                        whileHover={{
+                            scale: 0.98,
+                            transition: { duration: 0.4 },
+                        }}
                         animate={itemsVisible[index] ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
                         transition={{ duration: 0.6, delay: itemsVisible[index] ? index * 0.2 : 0 }}
                     >

@@ -35,11 +35,11 @@ export default function Hero() {
                         Втілюйте свої мрії легко з нашою інноваційною <br/> платформою для дропшипінгу
                     </p>
 
-
                     <div className="mt-8 m-auto w-full justify-center flex items-center gap-5">
                         <Button>
                             Для постачальників
                         </Button>
+
                         <LinkButton href='/'>Для дропшиперів </LinkButton>
                     </div>
                 </div>

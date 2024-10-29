@@ -42,7 +42,7 @@ const IntegrationCard = () => {
             <AppsIcon />
             <div className='flex flex-col gap-1'>
                 <h2 className="text-lg text-[#F0F0F0] font-medium">Інтеграція з іншими сервісами</h2>
-                <p className="text-[#787878] font-normal text-base">
+                <p className="text-[#787878] font-light text-base">
                     Всі необхідні інтеграції зібрані в одному додатку
                 </p>
             </div>
