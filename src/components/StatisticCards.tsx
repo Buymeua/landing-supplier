@@ -80,10 +80,10 @@ const StatisticCards = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <BoltIcon />
-                    <h2 className="text-lg text-[#F0F0F0] font-medium">Більше, аніж просто додаток</h2>
+                    <h2 className="text-lg text-[#F0F0F0] relative z-20 font-medium">Більше, аніж просто додаток</h2>
                 </motion.div>
                 <motion.p
-                    className="text-[#787878] max-w-[214px] font-light text-sm"
+                    className="text-[#787878] max-w-[214px] relative z-20 font-light text-sm"
                     initial={{ opacity: 0, y: 10 }}
                     animate={isCard2Visible ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1, delay: 0.4 }}
