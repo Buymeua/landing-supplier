@@ -49,7 +49,8 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage:{
-				"pattern" : "url('src/assets/bg/pattern.png')"
+				"pattern" : "url('src/assets/bg/pattern.png')",
+				"refImage" : "url('src/assets/img/refImage.png')"
 			},
 			boxShadow: {
 				'orange-500': '0 0 4px #FF5029',
