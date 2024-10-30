@@ -7,9 +7,7 @@ import {TgIcon} from "../icons";
 export default function NavBar() {
   const location = useLocation()
 
-  const navigation = [
-    { label: 'home', path: "/", icon: "fluent:home-12-regular" },
-  ];
+
 
   return (
     <nav className=" bg-[#191A1B] border-b border-b-[#FFFFFF1A] h-16 sm:h-20 flex items-center  shadow-lg backdrop-blur-md">
@@ -37,20 +35,20 @@ export default function NavBar() {
           >
             {location.pathname !== '/' &&
                 <ul className="flex flex-col justify-end space-y-0 pr-0 md:flex md:flex-row">
-              {navigation.map((item, idx) => {
-                return (
-                  <li
-                    key={idx}
-                    className="ml-0 md:ml-4"
-                  >
-                    <NavBarLink
-                      to={item.path}
-                      icon={item.icon}
-                      label={item.label}
-                    />
-                  </li>
-                );
-              })}
+              {/*{navigation.map((item, idx) => {*/}
+              {/*  return (*/}
+              {/*    <li*/}
+              {/*      key={idx}*/}
+              {/*      className="ml-0 md:ml-4"*/}
+              {/*    >*/}
+              {/*      <NavBarLink*/}
+              {/*        to={item.path}*/}
+              {/*        icon={item.icon}*/}
+              {/*        label={item.label}*/}
+              {/*      />*/}
+              {/*    </li>*/}
+              {/*  );*/}
+              {/*})}*/}
             </ul>
             }
           </div>

@@ -13,29 +13,29 @@ export default function Hero() {
 
     return (
         <div>
-            <div className='max-w-[1096px] m-auto py-20'>
+            <div className='max-w-[1096px] m-auto px-4 sm:px-0 py-20'>
                 <BackgroundCircles/>
                 <ScrollParallax isAbsolutelyPositioned={false} >
 
-                <div className="bg-white/10 mb-8 relative z-[9000] p-1 w-fit m-auto text-white flex gap-2 items-center rounded-3xl">
+                <div className="bg-white/10 mb-8 relative z-[9000] p-1  w-fit m-auto text-white flex gap-2 items-center rounded-3xl">
                     <div className="flex relative">
-                        <img src={Customer1} alt={'customer'}/>
-                        <img className="-ml-2" src={Customer2} alt={'customer'}/>
-                        <img className="-ml-2" src={Customer3} alt={'customer'}/>
-                        <img className="-ml-2" src={Customer4} alt={'customer'}/>
+                        <img src={Customer1} className={'w-6 sm:w-auto'} alt={'customer'}/>
+                        <img className="-ml-2 w-6 sm:w-auto" src={Customer2} alt={'customer'}/>
+                        <img className="-ml-2 w-6 sm:w-auto" src={Customer3} alt={'customer'}/>
+                        <img className="-ml-2 w-6 sm:w-auto" src={Customer4} alt={'customer'}/>
                     </div>
-                    <h1 className="text-xs sm:text-sm pr-2 sm:pr-6">Більше 1K задоволених користувачів.</h1>
+                    <h1 className="text-xs sm:text-sm pr-1 sm:pr-6">Більше 1K задоволених користувачів.</h1>
                 </div>
                 </ScrollParallax>
                 <div className={'mt-4 relative z-[9000] ' }>
-                    <h1 className="text-center text-white font-bold text-[80px]  leading-[90px]">
+                    <h1 className="text-center text-white font-bold text-[30px] sm:text-[50px] md:text-[60px]  lg:text-[80px]  lg:leading-[90px]">
                         Дропшипінг з Buyme: <br/> шлях до успішного бізнесу
                     </h1>
-                    <p className="mt-4 text-center text-xl text-[#A3A3A3]">
+                    <p className="mt-4 text-center text-base  sm:text-lg lg:text-xl text-[#A3A3A3]">
                         Втілюйте свої мрії легко з нашою інноваційною <br/> платформою для дропшипінгу
                     </p>
 
-                    <div className="mt-8 m-auto w-full justify-center flex items-center gap-5">
+                    <div className="mt-8 m-auto w-full justify-center flex-col sm:flex-row flex items-center gap-5">
                         <Button>
                             Для постачальників
                         </Button>
