@@ -34,7 +34,7 @@ const IntegrationCard = () => {
     return (
         <motion.div
             ref={cardRef}
-            className="w-[392px] relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-4 rounded-3xl text-white border border-[#373737]"
+            className="w-full md:w-[392px] relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-4 rounded-3xl text-white border border-[#373737]"
             initial={{ opacity: 0, y: -40 }}
             animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -40 }}
             transition={{ duration: 0.7 }}
@@ -50,7 +50,7 @@ const IntegrationCard = () => {
                 {[Hpng, PoromPng, CPng, TgPng].map((imgSrc, index) => (
                     <motion.div
                         key={index}
-                        className="w-20 h-20 bg-black flex justify-center items-center rounded-full border border-[#FFFFFF33] p-4"
+                        className="  w-16 h-16 sm:w-20  sm:h-20 bg-black flex justify-center items-center rounded-full border border-[#FFFFFF33] p-4"
                         initial={{ opacity: 0, y: 20 }} // Starts slightly below and invisible
                         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} // Animate up and fade in
                         transition={{ duration: 0.5, delay: isVisible ? index * 0.2 : 0 }} // Staggered delay for each icon

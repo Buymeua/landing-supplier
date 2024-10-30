@@ -13,11 +13,11 @@ export default function Hero() {
 
     return (
         <div>
-            <div className='max-w-[1096px] m-auto px-4 sm:px-0 py-20'>
+            <div className='max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20'>
                 <BackgroundCircles/>
                 <ScrollParallax isAbsolutelyPositioned={false} >
 
-                <div className="bg-white/10 mb-8 relative z-[9000] p-1  w-fit m-auto text-white flex gap-2 items-center rounded-3xl">
+                <div className="bg-white/10 mb-14 sm:mb-8 relative z-[9000] p-1  w-fit m-auto text-white flex gap-2 items-center rounded-3xl">
                     <div className="flex relative">
                         <img src={Customer1} className={'w-6 sm:w-auto'} alt={'customer'}/>
                         <img className="-ml-2 w-6 sm:w-auto" src={Customer2} alt={'customer'}/>

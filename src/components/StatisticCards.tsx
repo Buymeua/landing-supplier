@@ -4,8 +4,8 @@ import { BoltIcon } from "../icons";
 import { Frame98Png } from "../assets";
 
 const StatisticCards = () => {
-    const card1Ref = useRef(null);
-    const card2Ref = useRef(null);
+    const card1Ref = useRef<any>(null);
+    const card2Ref = useRef<any>(null);
     const [isCard1Visible, setIsCard1Visible] = useState(false);
     const [isCard2Visible, setIsCard2Visible] = useState(false);
 
@@ -38,11 +38,11 @@ const StatisticCards = () => {
     }, []);
 
     return (
-        <div className="w-full flex gap-[30px]">
+        <div className="w-full  flex-col sm:flex-row flex gap-4  md:gap-[30px]">
             {/* First Card */}
             <motion.div
                 ref={card1Ref}
-                className="w-fit min-w-[254px] bg-[#101111] overflow-hidden relative z-10 px-6 py-8 flex gap-[10px] items-center rounded-3xl text-white border border-[#373737]"
+                className="sm:w-fit w-full sm:min-w-[254px] bg-[#101111] overflow-hidden relative z-10 px-6 py-8 flex gap-[10px] items-center rounded-3xl text-white border border-[#373737]"
                 initial={{ opacity: 0, y: 40 }} // Slide from bottom
                 animate={isCard1Visible ? { opacity: 1, y: 0 } : {}} // Animate when visible
                 transition={{ duration: 0.7 }}
@@ -68,7 +68,7 @@ const StatisticCards = () => {
             {/* Second Card */}
             <motion.div
                 ref={card2Ref}
-                className="overflow-hidden w-full relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-1 rounded-3xl text-white border border-[#373737]"
+                className="overflow-hidden mb-10 sm:mb-0 w-full relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-1 rounded-3xl text-white border border-[#373737]"
                 initial={{ opacity: 0, x: 50 }} // Slide from right
                 animate={isCard2Visible ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7 }}
@@ -91,9 +91,9 @@ const StatisticCards = () => {
                     Ваш провідник між постачальником та продавцем
                 </motion.p>
                 <motion.div
-                    className=" bg-frame bg-contain bg-no-repeat h-[154px] opacity-60 w-[318px] absolute -right-4 top-0"
+                    className=" bg-frame bg-contain bg-no-repeat h-[154px] opacity-60 w-[318px] absolute -right-[160px]  md:-right-4 top-0"
                     initial={{ opacity: 0, scale: 0.95 }}
-                    animate={isCard2Visible ? { opacity: 1, scale: 1 } : {}}
+                    animate={isCard2Visible ? { opacity: 0.5, scale: 1 } : {}}
                     transition={{ duration: 0.8, delay: 0.9 }}
                 />
             </motion.div>

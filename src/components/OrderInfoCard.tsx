@@ -75,7 +75,7 @@ const OrderInfoCard = () => {
     return (
         <motion.div
             ref={cardRef}
-            className="w-[256px] relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-4 rounded-3xl text-white border border-[#373737]"
+            className=" md:w-auto lg:min-w-[256px] relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-4 rounded-3xl text-white border border-[#373737]"
             initial={{ opacity: 0, x: -100 }}
             animate={cardVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 0.7 }}
