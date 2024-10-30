@@ -10,6 +10,7 @@ body{
 	font-family: "Onest", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
+	overflow-y: scroll;
 }
 
 .page {
@@ -47,9 +48,6 @@ section {
 	background: rgba(0, 0, 0, 0.3);
 }
 
-body {
-	overflow-y: scroll;
-}
 
 
 .inner-shadow {

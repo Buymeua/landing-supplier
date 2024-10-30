@@ -12,6 +12,10 @@ export default function App() {
                     path='/'
                     element={<Pages.Home/>}
                 />
+                <Route
+                    path='/providers'
+                    element={<Pages.Providers/>}
+                />
             </Routes>
         </>
     );
