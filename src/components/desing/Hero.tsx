@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { MouseParallax } from "react-just-parallax";
+import {useEffect, useState} from "react";
+import {MouseParallax} from "react-just-parallax";
 
 export const Gradient = () => {
     return (
         <>
-            <div className="relative z-1 h-6 mx-2.5 bg-n-11 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-8" />
-            <div className="relative z-1 h-6 mx-6 bg-n-11/70 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-20" />
+            <div className="relative z-1 h-6 mx-2.5 bg-n-11 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-8"/>
+            <div className="relative z-1 h-6 mx-6 bg-n-11/70 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-20"/>
         </>
     );
 };
@@ -13,15 +13,19 @@ export const Gradient = () => {
 const Rings = () => {
     return (
         <>
-            <div className="absolute top-1/2 left-1/2 w-[65.875rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute top-1/2 left-1/2 w-[36.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute top-1/2 left-1/2 w-[23.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
+            <div
+                className="absolute top-1/2 left-1/2 w-[65.875rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"/>
+            <div
+                className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"/>
+            <div
+                className="absolute top-1/2 left-1/2 w-[36.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"/>
+            <div
+                className="absolute top-1/2 left-1/2 w-[23.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"/>
         </>
     );
 };
 
-export const BackgroundCircles = ({ parallaxRef }) => {
+export const BackgroundCircles = ({parallaxRef}:any) => {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -29,7 +33,8 @@ export const BackgroundCircles = ({ parallaxRef }) => {
     }, []);
 
     return (
-        <div className="hidden sm:block absolute left-0 lg:left-1/2 z-10 w-full lg:w-[78rem] aspect-square -translate-x-1/2 overflow-hidden">
+        <div
+            className="hidden sm:block absolute left-0 lg:left-1/2 z-10 w-full lg:w-[78rem] aspect-square -translate-x-1/2 overflow-hidden">
             <MouseParallax strength={0.2} parallaxContainerRef={parallaxRef}>
                 <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">
                     <div
