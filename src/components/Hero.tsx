@@ -6,6 +6,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { motion } from "framer-motion";
 import {useTypingEffect} from "../hooks/useTypingEffect";
 import {Link} from "react-router-dom";
+import {AppleIcon, GooglePlayIcon} from "../icons";
 
 export default function Hero({ props }) {
     console.log(props, 'props')
@@ -72,7 +73,29 @@ export default function Hero({ props }) {
                     </motion.div>
                 </div>
 
-                <div className="absolute left-0  top-[380px] bg-pattern w-full h-[680px]" />
+                {props.showStores &&
+                <motion.div className='mt-12 m-auto justify-center  flex gap-3'
+
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1.2, delay: 0.6 }}
+                >
+                    <a className='py-3 text-white group font-medium text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-5'>
+                        <AppleIcon />
+                        <span>App Store</span>
+                        <div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
+
+                    </a>
+                    <a className='py-3 group text-white font-medium text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-5'>
+                        <GooglePlayIcon />
+                        <span>Google Play</span>
+                        <div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
+
+                    </a>
+                </motion.div>
+                }
+
+                <div className={`absolute left-0 bg-pattern w-full h-[680px] ${props.showStores ? 'top-[180px]' : 'top-[380px]'}`} />
             </div>
         </div>
     );
