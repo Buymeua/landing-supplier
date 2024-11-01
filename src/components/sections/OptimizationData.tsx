@@ -28,6 +28,7 @@ export default function OptimizationData() {
                             className=' text-start sm:text-center text-[#F8F8FC]  text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.5 }}
                         >
                             {'<'}2K ТТН
@@ -52,6 +53,7 @@ export default function OptimizationData() {
                             className=' text-start sm:text-center text-[#F8F8FC]  text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay:0.8 }}
                         >
                           41K+
@@ -76,6 +78,7 @@ export default function OptimizationData() {
                             className='text-start sm:text-center text-[#F8F8FC] text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 1.2 }}
                         >
                             34 сек
@@ -97,6 +100,7 @@ export default function OptimizationData() {
                         <motion.h1
                             className=' text-start sm:text-center text-[#F8F8FC]  text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
+                            viewport={{ once: true }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 1.6 }}
                         >

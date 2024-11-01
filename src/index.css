@@ -2,8 +2,6 @@
 @tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
-/* Composing Utilities with @apply 		https://www.youtube.com/watch?v=krSgBUmIgP0 */
-
 body {
     height: 100vh;
     background-color: #191A1B;
@@ -27,13 +25,11 @@ a.active {
 
 @tailwind utilities;
 
-/* Optimize rendering performane		https://dev.to/mnathani/two-lines-of-css-that-boosts-7x-rendering-performance-4mjd */
 section {
     content-visibility: auto;
     contain-intrinsic-size: 1px 5000px;
 }
 
-/* Custom Scrollbar						https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -71,7 +67,65 @@ section {
 }
 
 .gradient-4 {
-	background: rgb(58,68,207);
-	background: linear-gradient(344deg, rgba(58,68,207,1) 0%, rgba(169,67,109,1) 100%);
+    background: rgb(58, 68, 207);
+    background: linear-gradient(344deg, rgba(58, 68, 207, 1) 0%, rgba(169, 67, 109, 1) 100%);
 }
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #aa0100;
+    transform-origin: 0%;
+}
+
+.card-gradient-1 {
+    background: rgb(209,194,236);
+    background: linear-gradient(351deg, rgba(209,194,236,1) 0%, rgba(126,91,190,1) 100%);
+}
+
+.card-gradient-2 {
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(255,255,255,1) 0%, rgba(138,109,160,1) 20%, rgba(126,91,190,1) 100%);
+}
+
+.card-gradient-3 {
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(255,255,255,1) 0%, rgba(138,109,160,1) 20%, rgba(126,91,190,1) 100%);
+}
+
+.card-gradient-4 {
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(255,255,255,1) 0%, rgb(183, 169, 116) 20%, rgba(126,91,190,1) 100%);
+}
+
+.card-gradient-5 {
+    background: rgb(255,255,255);
+    background: linear-gradient(1deg, rgba(255, 255, 255, 1) 0%, rgb(235 218 153) 20%, rgba(126, 91, 190, 1) 100%);}
+
+.card-gradient-6 {
+    background: rgb(255,255,255);
+    background: linear-gradient(20deg, rgb(93, 100, 149) 0%, rgb(110, 114, 135) 20%, rgb(79, 90, 157) 100%);
+}
+
+.card-gradient-7 {
+    background: rgb(255,255,255);
+    background: linear-gradient(1deg, rgb(93, 100, 149) 0%, rgb(110, 114, 135) 20%, rgb(79, 90, 157) 100%);
+}
+
+.card-gradient-8 {
+    background: rgb(255,255,255);
+    background: linear-gradient(1deg, rgb(82, 88, 141) 0%, rgb(66, 71, 115) 20%, rgb(62, 73, 155) 100%);
+}
+
+.card-gradient-9 {
+    background: rgb(255,255,255);
+    background: linear-gradient(1deg, rgb(61, 74, 184) 0%, rgb(83, 92, 165) 20%, rgb(90, 97, 163) 100%);
+}
+
+
+
+
 
