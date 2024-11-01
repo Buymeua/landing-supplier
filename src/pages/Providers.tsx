@@ -4,6 +4,7 @@ import OptimizationData from "../components/sections/OptimizationData";
 import FeatureHighlight from "../components/sections/FeatureHighlight";
 import {useScroll , motion} from "framer-motion";
 import PreviewFunc from "../components/sections/PreviewFunc";
+import Services from "../components/sections/Services";
 
 export default function Providers() {
     const {scrollYProgress} = useScroll();
@@ -18,6 +19,7 @@ export default function Providers() {
             <OptimizationData/>
             <FeatureHighlight/>
             <PreviewFunc />
+            <Services />
 
         </>
     );
