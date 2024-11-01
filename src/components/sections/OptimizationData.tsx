@@ -2,6 +2,7 @@ import {motion} from 'framer-motion';
 import { EnergyIcon } from "../../icons";
 import { useRef } from "react";
 import {isTablet} from "../../utils";
+import SectionHeader from "./SectionHeader";
 
 export default function OptimizationData() {
     const sectionRefSecond = useRef(null);
@@ -10,27 +11,7 @@ export default function OptimizationData() {
         <div
             className='max-w-[1096px] overflow-hidden sm:overflow-visible sm:h-auto mt-[148px] m-auto'
         >
-            <div className='pt-20 text-center'>
-                <motion.p
-                    className='text-[#BBBBBC]'
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{opacity: 1, y: 0}}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
-
-                >
-                    Про нас в цифрах
-                </motion.p>
-                <motion.h1
-                    className='mt-8 text-white font-semibold text-[30px] sm:text-[50px] md:text-[60px]'
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0}}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.7, delay: 0.2 }}
-                >
-                    Оптимізовані процеси <br /> обробки даних
-                </motion.h1>
-            </div>
+            <SectionHeader title={'Оптимізовані процеси обробки даних'} subtitle={'Про нас в цифрах'} />
             <div ref={sectionRefSecond} className='mt-16 px-4 md:px-0 min-h-[600px] flex flex-col md:flex-row gap-2 md:gap-4 items-end pb-20'>
                 <motion.div
                     className={'w-full md:w-[320px] flex   flex-row-reverse md:flex-col justify-between  rounded-2xl md:rounded-[32px] gradient-1'}

@@ -34,7 +34,6 @@ export default function Hero({ props }) {
                     )}
                 </ScrollParallax>
 
-                {/* Main Heading Section */}
                 <div className="mt-4 relative z-[9000]">
                     <motion.h1
                         className="text-center text-white font-bold text-[30px] sm:text-[50px] md:text-[60px] lg:text-[80px] lg:leading-[90px]"
@@ -44,7 +43,6 @@ export default function Hero({ props }) {
                     >
                         {props.title}
                     </motion.h1>
-
 
                     <motion.p
                         className="mt-4 text-center m-auto max-w-[480px] text-base sm:text-lg lg:text-xl text-[#A3A3A3]"
