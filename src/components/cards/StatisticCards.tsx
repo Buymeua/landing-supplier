@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {motion} from 'framer-motion';
-import {BoltIcon} from "../icons";
-import {Frame98Png} from "../assets";
+import {BoltIcon} from "../../icons";
+import {Frame98Png} from "../../assets";
 
 const StatisticCards = () => {
     const card1Ref = useRef<any>(null);

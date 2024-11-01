@@ -1,9 +1,9 @@
-import OrderInfoCard from "./OrderInfoCard";
-import IntegrationCard from "./IntegrationCard";
-import ReferalCard from "./ReferalCard";
-import StatisticCards from "./StatisticCards";
+import OrderInfoCard from "../cards/OrderInfoCard";
+import IntegrationCard from "../cards/IntegrationCard";
+import ReferalCard from "../cards/ReferalCard";
+import StatisticCards from "../cards/StatisticCards";
 
-export default function MainSection() {
+export default function Main() {
 
     return (
         <div className={'max-w-[1096px] overflow-hidden sm:overflow-visible sm:h-auto mt-12 sm:mt-0 m-auto'}>

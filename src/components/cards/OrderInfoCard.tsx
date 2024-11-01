@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {motion} from 'framer-motion';
-import {CartIcon} from "../icons";
+import {CartIcon} from "../../icons";
 
 const OrderInfoCard = () => {
     const data = [

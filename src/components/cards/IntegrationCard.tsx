@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {motion} from 'framer-motion';
-import {AppsIcon} from "../icons";
-import {CPng, Hpng, PoromPng, TgPng} from "../assets";
+import {AppsIcon} from "../../icons";
+import {CPng, Hpng, PoromPng, TgPng} from "../../assets";
 
 const IntegrationCard = () => {
     const cardRef = useRef<any>(null);

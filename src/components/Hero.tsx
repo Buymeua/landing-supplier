@@ -9,10 +9,6 @@ import {Link} from "react-router-dom";
 import {AppleIcon, GooglePlayIcon} from "../icons";
 
 export default function Hero({ props }) {
-    console.log(props, 'props')
-    const typingText = useTypingEffect("Дропшипінг з Buyme: шлях до успішного бізнесу", 100);
-
-
     return (
         <div className="relative">
             <div className="max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
@@ -95,7 +91,7 @@ export default function Hero({ props }) {
                 </motion.div>
                 }
 
-                <div className={`absolute left-0 bg-pattern w-full h-[680px] ${props.showStores ? 'top-[180px]' : 'top-[380px]'}`} />
+                <div className={`absolute left-0 bg-pattern w-full h-[620px] ${props.showStores ? 'top-[180px]' : 'top-[380px]'}`} />
             </div>
         </div>
     );
