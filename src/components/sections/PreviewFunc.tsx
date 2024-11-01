@@ -50,17 +50,17 @@ const Card = ({ card }: { card: CardType }) => {
     return (
         <div
             key={card.id}
-            className={`group flex flex-col items-center relative rounded-[24px] h-[612px] w-[348px] overflow-hidden ${
+            className={`group flex flex-col items-center relative rounded-[20px] sm:rounded-[24px] h-[580px] sm:h-[612px] w-[306px] sm:w-[348px] overflow-hidden ${
                 card.id === 3 ? 'justify-start' : 'justify-between'
             } ${card.className}`}
         >
-            <div className="p-8 text-white space-y-4">
+            <div className="p-4 sm:p-8 text-white space-y-2">
                 <motion.h1
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={cardTitleVariants}
-                    className="text-xl font-bold"
+                    className="text-xl  sm:font-bold"
                 >
                     {card.title}
                 </motion.h1>
@@ -69,7 +69,7 @@ const Card = ({ card }: { card: CardType }) => {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={cardDescriptionVariants}
-                    className="font-sans font-normal text-sm"
+                    className="font-sans text-[#f3f3f3] font-light text-sm"
                 >
                     {card.des}
                 </motion.p>
