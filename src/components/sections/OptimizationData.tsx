@@ -1,6 +1,7 @@
 import {motion} from 'framer-motion';
 import { EnergyIcon } from "../../icons";
 import { useRef } from "react";
+import {isTablet} from "../../utils";
 
 export default function OptimizationData() {
     const sectionRefSecond = useRef(null);
@@ -21,7 +22,7 @@ export default function OptimizationData() {
                     Про нас в цифрах
                 </motion.p>
                 <motion.h1
-                    className='mt-8 text-white font-semibold text-[60px]'
+                    className='mt-8 text-white font-semibold text-[30px] sm:text-[50px] md:text-[60px]'
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0}}
                     viewport={{ once: true }}
@@ -30,20 +31,20 @@ export default function OptimizationData() {
                     Оптимізовані процеси <br /> обробки даних
                 </motion.h1>
             </div>
-            <div ref={sectionRefSecond} className='mt-16 min-h-[600px] flex gap-4 items-end pb-20'>
+            <div ref={sectionRefSecond} className='mt-16 px-4 md:px-0 min-h-[600px] flex flex-col md:flex-row gap-2 md:gap-4 items-end pb-20'>
                 <motion.div
-                    className={'w-[320px] flex flex-col justify-between rounded-[32px] gradient-1'}
-                    initial={{ scale: 0.8, opacity: 0, height: 180 }}
-                    whileInView={{ scale: 1, opacity: 1, height: 341 }}
+                    className={'w-full md:w-[320px] flex   flex-row-reverse md:flex-col justify-between  rounded-2xl md:rounded-[32px] gradient-1'}
+                    initial={{ scale: 0.8, opacity: 0, height: isTablet() ? 40 : 180 }}
+                    whileInView={{ scale: 1, opacity: 1, height: isTablet() ? 120 : 341 }}
                     transition={{ duration: 0.7, delay: 0 }}
                     viewport={{ root: sectionRefSecond, once:true }}
                 >
-                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3'>
+                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3 h-fit'>
                         <EnergyIcon />
                     </div>
-                    <div className={'h-[180px] flex-col flex justify-between pb-8'}>
+                    <div className={'h-full md:h-[180px] flex-col flex justify-between p-4 sm:pb-8'}>
                         <motion.h1
-                            className='text-center text-[#F8F8FC] text-[54px] font-semibold'
+                            className=' text-start sm:text-center text-[#F8F8FC]  text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
@@ -55,19 +56,19 @@ export default function OptimizationData() {
                 </motion.div>
 
                 <motion.div
-                    className={'w-[320px] flex flex-col justify-between rounded-[32px] gradient-2'}
-                    initial={{ scale: 0.8, opacity: 0, height: 180 }}
-                    whileInView={{ scale: 1, opacity: 1, height: 500 }}
+                    className={'w-full md:w-[320px] flex flex-row-reverse md:flex-col justify-between  rounded-2xl md:rounded-[32px] gradient-2'}
+                    initial={{ scale: 0.8, opacity: 0,  height: isTablet() ? 40 : 180  }}
+                    whileInView={{ scale: 1, opacity: 1, height:isTablet() ? 120 : 500 }}
                     transition={{ duration: 0.7, delay: 0.3 }}
                     viewport={{ once: true }}
 
                 >
-                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3'>
+                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3 h-fit'>
                         <EnergyIcon />
                     </div>
-                    <div className={'h-[180px] flex-col flex justify-between pb-8'}>
+                    <div className={'h-full md:h-[180px] flex-col flex justify-between p-4 sm:pb-8'}>
                         <motion.h1
-                            className='text-center text-[#F8F8FC] text-[54px] font-semibold'
+                            className=' text-start sm:text-center text-[#F8F8FC]  text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay:0.8 }}
@@ -79,19 +80,19 @@ export default function OptimizationData() {
                 </motion.div>
 
                 <motion.div
-                    className={'w-[320px] flex flex-col justify-between rounded-[32px] gradient-3'}
-                    initial={{ scale: 0.8, opacity: 0, height: 180 }}
-                    whileInView={ { scale: 1, opacity: 1, height: 480 }}
+                    className={'w-full md:w-[320px] flex  flex-row-reverse md:flex-col justify-between  rounded-2xl md:rounded-[32px] gradient-3'}
+                    initial={{ scale: 0.8, opacity: 0, height: isTablet() ? 40 : 180  }}
+                    whileInView={ { scale: 1, opacity: 1, height:isTablet() ? 120 : 480 }}
                     transition={{ duration: 0.7, delay: 0.6 }}
                     viewport={{ once: true }}
 
                 >
-                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3'>
+                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3 h-fit'>
                         <EnergyIcon />
                     </div>
-                    <div className={'h-[180px] flex-col flex justify-between pb-8'}>
+                    <div className={'h-full md:h-[180px] flex-col flex justify-between p-4 sm:pb-8'}>
                         <motion.h1
-                            className='text-center text-[#F8F8FC] text-[54px] font-semibold'
+                            className='text-start sm:text-center text-[#F8F8FC] text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 1.2 }}
@@ -102,19 +103,18 @@ export default function OptimizationData() {
                     </div>
                 </motion.div>
                 <motion.div
-                    className={'w-[320px] flex flex-col justify-between rounded-[32px] gradient-4'}
-                    initial={{ scale: 0.8, opacity: 0, height: 180 }}
-                    whileInView={{ scale: 1, opacity: 1, height: 400 }}
+                    className={'w-full md:w-[320px] flex  flex-row-reverse md:flex-col justify-between rounded-2xl md:rounded-[32px] gradient-4'}
+                    initial={{ scale: 0.8, opacity: 0, height: isTablet() ? 40 : 180  }}
+                    whileInView={{ scale: 1, opacity: 1, height:isTablet() ? 120 : 400 }}
                     transition={{ duration: 0.7, delay: 0.9 }}
                     viewport={{ once: true }}
-
                 >
-                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3'>
+                    <div className='rounded-full bg-[#FFFFFF1A] border-4 border-white/10 w-fit m-3 p-3 h-fit'>
                         <EnergyIcon />
                     </div>
-                    <div className={'h-[180px] flex-col flex justify-between pb-8'}>
+                    <div className={'h-full md:h-[180px] flex-col flex justify-between p-4 sm:pb-8'}>
                         <motion.h1
-                            className='text-center text-[#F8F8FC] text-[54px] font-semibold'
+                            className=' text-start sm:text-center text-[#F8F8FC]  text-[30px]  sm:text-[42px] lg:text-[54px] font-semibold'
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 1.6 }}

@@ -70,19 +70,19 @@ export default function Hero({ props }) {
                 </div>
 
                 {props.showStores &&
-                <motion.div className='mt-12 m-auto justify-center  flex gap-3'
+                <motion.div className=' mt-6 sm:mt-12 m-auto justify-center  flex gap-3'
 
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.2, delay: 0.6 }}
                 >
-                    <a className='py-3 text-white group font-medium text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-5'>
+                    <a className=' py-2 sm:py-3 text-white group font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                         <AppleIcon />
                         <span>App Store</span>
                         <div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
 
                     </a>
-                    <a className='py-3 group text-white font-medium text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-5'>
+                    <a className=' py-2 sm:py-3 group text-white font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                         <GooglePlayIcon />
                         <span>Google Play</span>
                         <div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
