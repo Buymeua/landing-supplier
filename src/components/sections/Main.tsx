@@ -3,6 +3,7 @@ import IntegrationCard from "../cards/IntegrationCard";
 import ReferalCard from "../cards/ReferalCard";
 import StatisticCards from "../cards/StatisticCards";
 
+
 export default function Main() {
 
     return (

@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {motion} from 'framer-motion';
 import {AppsIcon} from "../../icons";
-import {CPng, Hpng, PoromPng, TgPng} from "../../assets";
+import {CSvg, HSvg, PromSvg, TgSvg} from "../../assets";
 
 const IntegrationCard = () => {
     const cardRef = useRef<any>(null);
@@ -47,7 +47,7 @@ const IntegrationCard = () => {
                 </p>
             </div>
             <div className={'mt-5 cursor-pointer flex gap-3'}>
-                {[Hpng, PoromPng, CPng, TgPng].map((imgSrc, index) => (
+                {[HSvg, PromSvg, CSvg, TgSvg].map((imgSrc, index) => (
                     <motion.div
                         key={index}
                         className="  w-16 h-16 sm:w-20  sm:h-20 bg-black flex justify-center items-center rounded-full border border-[#FFFFFF33] p-4"
