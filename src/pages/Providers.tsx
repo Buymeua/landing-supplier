@@ -5,6 +5,7 @@ import FeatureHighlight from "../components/sections/FeatureHighlight";
 import {useScroll , motion} from "framer-motion";
 import PreviewFunc from "../components/sections/PreviewFunc";
 import Integrations from "../components/sections/Integrations";
+import Slogan from "../components/sections/Slogan";
 
 export default function Providers() {
     const {scrollYProgress} = useScroll();
@@ -20,6 +21,8 @@ export default function Providers() {
             <FeatureHighlight/>
             <PreviewFunc />
             <Integrations />
+            <Slogan />
+
 
         </>
     );
