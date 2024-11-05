@@ -34,7 +34,7 @@ export default function Slogan() {
                 variants={textVariants}
                 transition={{ delay: 1.2 }}
             >
-                <h1 className='leading-9 text-[40px] sm:text-[56px] md:text-[74px] lg:text-[80px] text-[#F8F8FC] md:leading-[88px]'>
+                <h1 className='leading-9 font-bold text-[40px] sm:text-[56px] md:text-[74px] lg:text-[80px] text-[#F8F8FC] md:leading-[88px]'>
                     Оптимізуй <br /> свою роботу
                 </h1>
             </motion.div>
@@ -47,7 +47,9 @@ export default function Slogan() {
                 variants={textVariants}
                 transition={{ delay: 1.4 }}
             >
-                <h1 className='leading-9 text-[40px] sm:text-[56px] md:text-[74px] lg:text-[80px] text-[#F8F8FC] text-end md:leading-[88px]'>
+                <h1
+                    className='leading-9 font-bold text-[40px] sm:text-[56px] md:text-[74px] lg:text-[80px] text-end md:leading-[88px] bg-gradient-to-r from-[#333333] via-[#777777] to-[#CCCCCC] text-transparent bg-clip-text'
+                >
                     Користуйся <br /> додатком Buyme
                 </h1>
             </motion.div>
