@@ -2,6 +2,8 @@ export { default as Customer1 } from "./img/customer1.svg";
 export { default as Customer2 } from "./img/customer2.svg";
 export { default as Customer3 } from "./img/customer3.svg";
 export { default as Customer4 } from "./img/customer4.svg";
+export { default as Customer5 } from "./img/customer5.svg";
+
 export { default as PromSvg } from "./img/prom.svg";
 export { default as TgSvg } from "./img/tg.svg";
 export { default as HSvg } from "./img/h.svg";

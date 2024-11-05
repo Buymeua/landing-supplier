@@ -50,6 +50,7 @@ module.exports = {
 		extend: {
 			backgroundImage:{
 				"pattern" : "url('src/assets/bg/pattern.png')",
+				"qoute" : "url('src/assets/bg/quoteBg.png')",
 				"refImage" : "url('src/assets/img/refImage.png')",
 				"frame" : "url('src/assets/img/frame98.png')"
 
