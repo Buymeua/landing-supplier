@@ -5,8 +5,8 @@ import {QuoteIcon} from "../../icons";
 
 export default function ContactUs() {
     return (
-        <div className="max-w-[1096px] mx-auto px-4 sm:px-0 py-10 mt-12 sm:mt-[120px]">
-            <div className="bg-[#FFFFFF08] p-6 sm:p-10 rounded-[32px] flex flex-col lg:flex-row items-center lg:items-start gap-[78px]">
+        <div className="max-w-[1096px] mx-auto sm:px-0 py-10 mt-12 sm:mt-[120px]">
+            <div className=" bg-transparent  sm:bg-[#FFFFFF08] p-4 sm:p-10 rounded-[32px] flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-[78px]">
                 <div className=" w-full ">
                     <h2 className="text-3xl sm:text-[44px] font-semibold text-white mb-4">
                         Зв'яжіться з нами
@@ -37,7 +37,7 @@ export default function ContactUs() {
                     </div>
                 </div>
 
-                <div className=" w-full lg:max-w-[498px] h-auto   flex flex-col gap-4 sm:gap-16 bg-qoute bg-no-repeat bg-cover overflow-hidden rounded-[24px] p-4 sm:p-[60px] text-white">
+                <div className=" w-full lg:max-w-[498px] h-auto   flex flex-col gap-8 sm:gap-16 bg-qoute bg-no-repeat bg-cover overflow-hidden rounded-[24px] p-4 sm:p-[60px] text-white">
                     <div>
                         <QuoteIcon />
                     </div>
