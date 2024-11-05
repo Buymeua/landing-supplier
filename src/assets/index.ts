@@ -13,6 +13,8 @@ export { default as CSvg } from "./img/c.svg";
 export { default as Frame98Png } from "./img/frame98.png";
 
 export { default as Elips1 } from "./img/elips1.svg";
+export { default as Elips2 } from "./img/elips2.svg";
+
 
 export { default as DivaceScreen } from "./img/divaces/2.svg";
 export { default as Divace2 } from "./img/divaces/MacBook-Air-M2.svg";
