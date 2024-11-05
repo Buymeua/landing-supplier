@@ -6,6 +6,7 @@ import {useScroll , motion} from "framer-motion";
 import PreviewFunc from "../components/sections/PreviewFunc";
 import Integrations from "../components/sections/Integrations";
 import Slogan from "../components/sections/Slogan";
+import ContactUs from "../components/sections/ContactUs";
 
 export default function Providers() {
     const {scrollYProgress} = useScroll();
@@ -22,6 +23,7 @@ export default function Providers() {
             <PreviewFunc />
             <Integrations />
             <Slogan />
+            <ContactUs />
 
 
         </>
