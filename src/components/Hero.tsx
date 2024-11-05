@@ -8,7 +8,7 @@ import {useTypingEffect} from "../hooks/useTypingEffect";
 import {Link} from "react-router-dom";
 import {AppleIcon, GooglePlayIcon} from "../icons";
 
-export default function Hero({ props }) {
+export default function Hero({ props }:any) {
     return (
         <div className="relative">
             <div className="max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">

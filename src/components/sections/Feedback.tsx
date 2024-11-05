@@ -30,11 +30,11 @@ const testimonials = [
     }
 ];
 
-const TestimonialText = ({ text }) => {
+const TestimonialText = ({ text }:any) => {
     const words = text.split(" ");
     return (
         <h1 className="text-white relative z-10 text-2xl sm:text-[44px] md:text-[60px] font-semibold sm:leading-[56px] md:leading-[72px]">
-            {words.map((word, index) => {
+            {words.map((word:string, index:number) => {
                 if (index >= 2 && index <= 4) {
                     return (
                         <span
