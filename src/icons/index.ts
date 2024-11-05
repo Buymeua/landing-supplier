@@ -7,6 +7,7 @@ export  { default as GooglePlayIcon } from  './GooglePlay'
 export  { default as AppleIcon } from  './Apple'
 export  { default as EnergyIcon } from  './Energy'
 export  { default as QuoteIcon } from  './Quote'
+export  { default as ArrowIcon } from  './Arrow'
 export  { default as FeatureIcon } from  './Feature'
 
 

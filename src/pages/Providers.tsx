@@ -7,6 +7,7 @@ import PreviewFunc from "../components/sections/PreviewFunc";
 import Integrations from "../components/sections/Integrations";
 import Slogan from "../components/sections/Slogan";
 import ContactUs from "../components/sections/ContactUs";
+import Feedback from "../components/sections/Feedback";
 
 export default function Providers() {
     const {scrollYProgress} = useScroll();
@@ -24,8 +25,7 @@ export default function Providers() {
             <Integrations />
             <Slogan />
             <ContactUs />
-
-
+            <Feedback />
         </>
     );
 }
