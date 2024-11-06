@@ -51,7 +51,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick, custom }) => (
                 transition: { delay: custom * 0.2, duration: 0.5 , ease : 'easeInOut' }
             })
         }}
-        className={`border-[#1F1F30] border-b md:border-0  py-6 md:p-8 rounded-none md:rounded-2xl ${isOpen ? 'bg-[#FFFFFF08]' : 'bg-transparent'}`}
+        className={`border-[#1F1F30] border-b md:border-0  py-6 md:p-8 rounded-none md:rounded-2xl ${isOpen ? 'sm:bg-[#FFFFFF08]' : 'bg-transparent'}`}
     >
         <div
             onClick={onClick}
