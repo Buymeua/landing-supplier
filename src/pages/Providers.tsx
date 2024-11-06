@@ -8,6 +8,7 @@ import Integrations from "../components/sections/Integrations";
 import Slogan from "../components/sections/Slogan";
 import ContactUs from "../components/sections/ContactUs";
 import Feedback from "../components/sections/Feedback";
+import Faq from "../components/sections/Faq";
 
 export default function Providers() {
     const {scrollYProgress} = useScroll();
@@ -26,6 +27,7 @@ export default function Providers() {
             <Slogan />
             <ContactUs />
             <Feedback />
+            <Faq />
         </>
     );
 }
