@@ -2,6 +2,7 @@ import {Route, Routes} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import * as Pages from './pages/_index';
 import ScrollToTop from "./hooks/scrollToTop";
+import Footer from "./components/Footer";
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
                     element={<Pages.Providers/>}
                 />
             </Routes>
+            <Footer />
         </>
     );
 }

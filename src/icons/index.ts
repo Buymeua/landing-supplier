@@ -11,6 +11,7 @@ export  { default as ArrowIcon } from  './Arrow'
 export  { default as FeatureIcon } from  './Feature'
 export  { default as PlusIcon } from  './Plus'
 export  { default as MinusIcon } from  './Minus'
+export  { default as ArrowUpIcon } from  './ArrowUp'
 
 
 
