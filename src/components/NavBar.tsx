@@ -42,8 +42,7 @@ export default function NavBar() {
               </a>
             </div>
 
-            {/* Desktop Navigation */}
-            {location.pathname !== '/' && (
+            {location.pathname == '/providers' && (
                 <ul className="hidden sm:flex justify-center gap-6 lg:gap-8">
                   {navigation.map((item, idx) => (
                       <li key={idx}>

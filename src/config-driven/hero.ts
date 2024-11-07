@@ -1,6 +1,6 @@
 const mainConfig = {
     showCustomer: true,
-    showStores: false,
+    showStores: true,
     title: 'Дропшипінг з Buyme: шлях до успішного бізнесу',
     description: 'Втілюйте свої мрії легко з нашою інноваційною платформою для дропшипінгу',
     button:{
@@ -14,7 +14,7 @@ const mainConfig = {
 }
 const providersConfig = {
     showCustomer: false,
-    showStores: true,
+    showStores: false,
     title: 'Дропшипінг з Buyme: для постачальників ',
     description: 'Втілюйте свої мрії легко з нашою інноваційною платформою для дропшипінгу',
     button:{

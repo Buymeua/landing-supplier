@@ -20,7 +20,7 @@ export default function Footer() {
         <footer>
             <div
                 className='max-w-[1096px] relative flex px-4 sm:px-0 flex-col z-10 overflow-hidden sm:overflow-visible sm:h-auto mt-[120px] m-auto'>
-                {location.pathname !== '/' &&
+                {location.pathname == '/providers' &&
                     <div className={'flex justify-between flex-col gap-8 sm:flex-row'}>
                         <div className={'flex mb-6 md:mb-[52px] flex-col gap-12'}>
                             <h1
