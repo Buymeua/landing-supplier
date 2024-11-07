@@ -49,10 +49,10 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage:{
-				"pattern" : "url('public/images/pattern.png')",
-				"qoute" : "url('public/images/quoteBg.png')",
-				"refImage" : "url('public/images/refImage.png')",
-				"frame" : "url('public/images/frame98.png')"
+				"pattern" : "url('images/pattern.png')",
+				"qoute" : "url('images/quoteBg.png')",
+				"refImage" : "url('images/refImage.png')",
+				"frame" : "url('images/frame98.png')"
 
 			},
 			boxShadow: {
