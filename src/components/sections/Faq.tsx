@@ -105,7 +105,7 @@ export default function Faq() {
                     </div>
                 </div>
 
-                <div className="max-w-[762px] mt-3 md:-mt-8">
+                <div className="max-w-[762px] overflow-hidden mt-3 md:-mt-8">
                     {faqItems.map((item, index) => (
                         <AccordionItem
                             key={index}

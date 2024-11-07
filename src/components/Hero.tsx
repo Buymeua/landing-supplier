@@ -13,8 +13,6 @@ export default function Hero({ props }:any) {
         <div className="relative">
             <div className="max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
                 <BackgroundCircles />
-
-                {/* Customer Count Section */}
                 <ScrollParallax isAbsolutelyPositioned={false}>
                     {props.showCustomer && (
                         <motion.div
@@ -34,7 +32,7 @@ export default function Hero({ props }:any) {
                     )}
                 </ScrollParallax>
 
-                <div className="mt-4 relative z-[9000]">
+                <div className="mt-4 relative z-10">
                     <motion.h1
                         className="text-center text-white font-bold text-[30px] sm:text-[50px] md:text-[60px] lg:text-[80px] lg:leading-[90px]"
                         initial={{ opacity: 0, y: 40 }}
