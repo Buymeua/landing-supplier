@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 import Button from "../UI/Button";
 import {MinusIcon, PlusIcon} from "../../icons";
 
-const faqItems = [
+const faqItems :any= [
     {
         question: "Як відбувається процес оформлення замовлень?",
         answer: (
@@ -36,7 +36,7 @@ const faqItems = [
     }
 ];
 
-const AccordionItem = ({question, answer, isOpen, onClick, custom}) => (
+const AccordionItem = ({question, answer, isOpen, onClick, custom}:any) => (
     <motion.div
         initial="hidden"
         whileInView="visible"
@@ -88,7 +88,7 @@ const AccordionItem = ({question, answer, isOpen, onClick, custom}) => (
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState(null);
 
-    const toggleAccordion = (index) => {
+    const toggleAccordion = (index:any) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
@@ -108,7 +108,7 @@ export default function Faq() {
                     </div>
 
                     <div className="max-w-[762px] overflow-hidden mt-3 md:-mt-8">
-                        {faqItems.map((item, index) => (
+                        {faqItems.map((item:any, index:number) => (
                             <AccordionItem
                                 key={index}
                                 question={item.question}

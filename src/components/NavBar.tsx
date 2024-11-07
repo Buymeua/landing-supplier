@@ -34,7 +34,7 @@ export default function NavBar() {
             <div className="flex items-center">
               <a href="/">
                 <img
-                    src='/logo.png'
+                    src='/logo.svg'
                     width={100}
                     height={40}
                     alt="Float UI logo"
