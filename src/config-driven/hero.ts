@@ -4,12 +4,12 @@ const mainConfig = {
     title: 'Дропшипінг з Buyme: шлях до успішного бізнесу',
     description: 'Втілюйте свої мрії легко з нашою інноваційною платформою для дропшипінгу',
     button:{
-        link:'/providers',
-        text:'Для постачальників'
+        link:'/',
+        text:'Для дропшиперів'
     },
     link:{
-        href:'/dropshippers',
-        text:'Для дропшиперів'
+        href:'/providers',
+        text:'Для постачальників'
     }
 }
 const providersConfig = {
@@ -18,11 +18,12 @@ const providersConfig = {
     title: 'Дропшипінг з Buyme: для постачальників ',
     description: 'Втілюйте свої мрії легко з нашою інноваційною платформою для дропшипінгу',
     button:{
+        href : 'https://suppliers.buymeua.shop/auth/signup',
         link:'/providers',
         text:'Зареєструватися'
     },
     link:{
-        href:'/providers',
+        href:'about',
         text:'Дізнатися більше'
     }
 }

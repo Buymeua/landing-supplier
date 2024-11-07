@@ -17,7 +17,7 @@ const testimonials = [
         customerIcon: Customer2
     },
     {
-        name: "Ольга",
+        name: "Олег",
         company: "GreenLife",
         text: "Ми швидко впровадили нові ідеї, і це допомогло нашому зростанню.",
         customerIcon: Customer3

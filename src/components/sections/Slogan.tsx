@@ -15,7 +15,7 @@ export default function Slogan() {
     };
 
     return (
-        <div className='max-w-[1096px] relative flex px-2 sm:px-0 flex-col pb-10 overflow-hidden sm:overflow-visible sm:h-auto mt-[120px] m-auto'>
+        <div className='max-w-[1096px] w-full relative flex px-2 sm:px-0 flex-col pb-10 overflow-hidden sm:overflow-visible sm:h-auto mt-[120px] m-auto'>
             <motion.div
                 className='absolute flex justify-center w-full h-full py-0 md:py-10'
                 initial="hidden"
