@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
 
-export default function SectionHeader({title, subtitle , des}: any) {
+export default function SectionHeader({id, title, subtitle , des}: any) {
     return (
-        <div className=' pt-5 sm:pt-20 text-center'>
+        <div id={id} className=' pt-5 sm:pt-8 text-center'>
             <motion.p
                 className='uppercase text-sm text-[#BBBBBC]'
                 initial={{opacity: 0, y: 20}}
@@ -13,7 +13,7 @@ export default function SectionHeader({title, subtitle , des}: any) {
                 {subtitle}
             </motion.p>
             <motion.h1
-                className='mt-8 text-white font-semibold text-[30px] sm:text-[50px] md:text-[60px]'
+                className='mt-6 text-white font-semibold text-[30px] sm:text-[50px] md:text-[60px] md:leading-[64px]'
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}

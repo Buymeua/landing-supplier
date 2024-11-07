@@ -5,7 +5,7 @@ import {isTablet} from "../../utils";
 
 const PreviewFunc = () => {
     return (
-        <div>
+        <div id='functions'>
             <motion.div
                 initial="hidden"
                 whileInView="visible"

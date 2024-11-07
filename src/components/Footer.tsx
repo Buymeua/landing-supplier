@@ -2,9 +2,19 @@ import {useLocation} from "react-router-dom";
 import React from "react";
 import Button from "./UI/Button";
 import {ArrowUpIcon} from "../icons";
+import {Link} from "react-scroll";
 
 export default function Footer() {
     const location = useLocation()
+
+    const navigation = [
+        {label: 'Про нас', path: 'about'},
+        {label: 'Переваги', path: 'feature'},
+        {label: 'Функціонал', path: 'functions'},
+        {label: 'Інтеграції', path: 'integration'},
+        {label: 'Відгуки', path: 'feedback'},
+        {label: 'FAQ', path: 'faq'}
+    ];
 
     return (
         <footer>
@@ -30,25 +40,18 @@ export default function Footer() {
                             <div>
                                 <h2 className="mb-5 text-base md:text-xl text-[#BBBBBC] font-semibold dark:text-white">Навігація</h2>
                                 <ul className="text-[#FFFFFF] text-sm md:text-base font-light">
-                                    <li className="mb-4">
-                                        <a href="#" className=" hover:underline">Про нас</a>
-                                    </li>
-                                    <li className="mb-4">
-                                        <a href="#" className="hover:underline">Переваги</a>
-                                    </li>
-                                    <li className="mb-4">
-                                        <a href="#" className="hover:underline">Функціонал</a>
-                                    </li>
-                                    <li className="mb-4">
-                                        <a href="#" class="hover:underline">Інтеграції</a>
-                                    </li>
-                                    <li className="mb-4">
-                                        <a href="#" className="hover:underline">Відгуки</a>
-                                    </li>
-                                    <li className="mb-4">
-                                        <a href="#" className="hover:underline">FAQ</a>
-                                    </li>
-
+                                    {navigation.map((item: any, index: number) => (
+                                            <li key={index} className="mb-4">
+                                                <Link
+                                                    to={item.path}
+                                                    smooth={true}
+                                                    duration={500}
+                                                    offset={50}
+                                                    className="hover:underline"
+                                                >{item.label} </Link>
+                                            </li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
                             <div>

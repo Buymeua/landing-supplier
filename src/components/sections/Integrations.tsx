@@ -46,7 +46,7 @@ export default function Integrations() {
 
     return (
         <div className='max-w-[1096px] pb-10 overflow-hidden sm:overflow-visible sm:h-auto mt-[-100px] sm:mt-[-80px] m-auto'>
-            <SectionHeader title='Зв’язок з іншими сервісами' />
+            <SectionHeader id='integration' title='Зв’язок з іншими сервісами' />
 
             <div className='mt-20 px-4 md:px-0 gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2'>
                 {integrations.map((integration: integrationsType, index: number) =>

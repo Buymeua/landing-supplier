@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { TgIcon } from "../icons";
 import { Icon } from '@iconify/react';
+import { Link } from 'react-scroll';
+
 
 
 export default function NavBar() {
@@ -10,12 +12,12 @@ export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { label: 'Про нас', path: '#' },
-    { label: 'Переваги', path: '#' },
-    { label: 'Функціонал', path: '#' },
-    { label: 'Інтеграції', path: '#' },
-    { label: 'Відгуки', path: '#' },
-    { label: 'FAQ', path: '#' }
+    { label: 'Про нас', path: 'about' },
+    { label: 'Переваги', path: 'feature' },
+    { label: 'Функціонал', path: 'functions' },
+    { label: 'Інтеграції', path: 'integration' },
+    { label: 'Відгуки', path: 'feedback' },
+    { label: 'FAQ', path: 'faq' }
   ];
 
   const mobileMenuVariants = {
@@ -45,12 +47,13 @@ export default function NavBar() {
                 <ul className="hidden sm:flex justify-center gap-6 lg:gap-8">
                   {navigation.map((item, idx) => (
                       <li key={idx}>
-                        <motion.a
-                            className="text-white text-sm lg:text-base shadow"
-                            href={item.path}
-                        >
-                          {item.label}
-                        </motion.a>
+                        <Link
+                            to={item.path}
+                            smooth={true}
+                            duration={500}
+                            offset={40}
+                            className="text-white text-sm lg:text-base shadow cursor-pointer"
+                        >{item.label} </Link>
                       </li>
                   ))}
                 </ul>
@@ -100,13 +103,14 @@ export default function NavBar() {
                 <ul className="flex flex-col gap-6 text-center">
                   {navigation.map((item, idx) => (
                       <li key={idx}>
-                        <motion.a
-                            className="text-white hover:underline transition ease-in-out text-lg shadow"
-                            href={item.path}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {item.label}
-                        </motion.a>
+                        <Link
+                            to={item.path}
+                            smooth={true}
+                            onClick={()=>setIsMobileMenuOpen(false)}
+                            duration={500}
+                            offset={50}
+                            className="text-white lg:text-base shadow cursor-pointer"
+                        >{item.label} </Link>
                       </li>
                   ))}
                 </ul>

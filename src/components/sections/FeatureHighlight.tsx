@@ -28,6 +28,7 @@ export default function FeatureHighlight() {
     return (
         <div className='max-w-[1096px] pb-10 overflow-hidden sm:overflow-visible sm:h-auto mt-3 sm:mt-[148px] m-auto'>
             <SectionHeader
+                id='feature'
                 title='Більше ніж просто додатокs'
                 subtitle='Переваги'
                 des='Buyme є мультизадачним помічником, який спрощує, пришвидшує та автоматизує 90% процесів між постачальником та продавцем'

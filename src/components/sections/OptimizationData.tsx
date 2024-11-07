@@ -9,9 +9,9 @@ export default function OptimizationData() {
 
     return (
         <div
-            className='max-w-[1096px] overflow-hidden sm:overflow-visible sm:h-auto mt-[148px] m-auto'
-        >
-            <SectionHeader title={'Оптимізовані процеси обробки даних'} subtitle={'Про нас в цифрах'} />
+            className='max-w-[1096px] overflow-hidden sm:overflow-visible sm:h-auto mt-[148px] m-auto'>
+
+            <SectionHeader id='about'  title={'Оптимізовані процеси обробки даних'} subtitle={'Про нас в цифрах'} />
             <div ref={sectionRefSecond} className='mt-16 px-4 md:px-0 min-h-[600px] flex flex-col md:flex-row gap-2 md:gap-4 items-end pb-20'>
                 <motion.div
                     className={'w-full md:w-[320px] flex   flex-row-reverse md:flex-col justify-between  rounded-2xl md:rounded-[32px] gradient-1'}
