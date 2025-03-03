@@ -16,15 +16,16 @@ export { default as Elips1 } from "./img/elips1.svg";
 export { default as Elips2 } from "./img/elips2.svg";
 
 
-export { default as DivaceScreen } from "./img/divaces/2.svg";
-export { default as Divace2 } from "./img/divaces/MacBook-Air-M2.svg";
-export { default as Divace3 } from "./img/divaces/3.svg";
-export { default as Divace4 } from "./img/divaces/4.svg";
-export { default as Divace5 } from "./img/divaces/5.svg";
-export { default as Divace6 } from "./img/divaces/6.svg";
-export { default as Divace7 } from "./img/divaces/7.svg";
-export { default as Divace8 } from "./img/divaces/8.svg";
-export { default as Divace9 } from "./img/divaces/9.svg";
+export { default as Screen1 } from "./img/divaces/MacBook-Air-M2.png";
+export { default as Screen2 } from "./img/divaces/Midnight.png";
+export { default as Screen3 } from "./img/divaces/Freebies-001.png";
+export { default as Screen4 } from "./img/divaces/Official-Color.png";
+export { default as Screen5 } from "./img/divaces/MacBook-Air-M2-1.png";
+export { default as Screen6 } from "./img/divaces/Frame 1996664141.png";
+export { default as Screen7 } from "./img/divaces/Midnight-1.png";
+export { default as Screen8 } from "./img/divaces/Silver.png";
+export { default as Screen9 } from "./img/divaces/Midnightas.png";
+
 
 
 

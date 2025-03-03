@@ -3,6 +3,7 @@ import React from "react";
 import Button from "./UI/Button";
 import {ArrowUpIcon} from "../icons";
 import {Link} from "react-scroll";
+import {Icon} from "@iconify/react";
 
 export default function Footer() {
     const location = useLocation()
@@ -36,7 +37,7 @@ export default function Footer() {
                                 </Button>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8">
+                        <div className="grid grid-cols-2 sm:gap-8 px-4 py-6 lg:py-8">
                             <div>
                                 <h2 className="mb-5 text-base md:text-xl text-[#BBBBBC] font-semibold dark:text-white">Навігація</h2>
                                 <ul className="text-[#FFFFFF] text-sm md:text-base font-light">
@@ -56,15 +57,21 @@ export default function Footer() {
                             </div>
                             <div>
                                 <h2 className="mb-5 text-base md:text-xl  text-[#BBBBBC] font-semibold dark:text-white">Соцмережі</h2>
-                                <ul className="text-[#FFFFFF] text-sm md:text-base font-light">
+                                <ul className="text-[#FFFFFF] flex gap-3  sm:gap-6 text-sm md:text-base font-light">
                                     <li className="mb-4 flex gap-1 items-center">
-                                        <a href="#" className="hover:underline">Facebook</a> <ArrowUpIcon/>
+                                        <a target={"_blank"} href="https://www.facebook.com/share/15vDzDrnNb/?mibextid=wwXIfr" className="hover:underline">
+                                            <Icon icon={'ri:facebook-fill'} width={24} color={'#FFFFFF'} />
+                                        </a>
                                     </li>
                                     <li className="mb-4 flex gap-1 items-center">
-                                        <a href="#" className="hover:underline">Instagram</a> <ArrowUpIcon/>
+                                        <a target={'_blank'} href="https://www.instagram.com/buymeua_platform?igsh=aHNjYW5iNHVyZ3Mw" className="hover:underline">
+                                            <Icon icon={'ri:instagram-fill'} width={24} color={'#FFFFFF'} />
+                                        </a>
                                     </li>
                                     <li className="mb-4  flex gap-1 items-center">
-                                        <a href="#" className="hover:underline">Telegram</a> <ArrowUpIcon/>
+                                        <a href={'https://t.me/buy_me_ua'} target={'_blank'} className="hover:underline">
+                                            <Icon icon={'ri:telegram-2-fill'} width={24} color={'#FFFFFF'} />
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -72,8 +79,9 @@ export default function Footer() {
                     </div>
                 }
                 <div className={'border-t border-[#1F1F30] py-6 sm:py-8 flex justify-between w-full items-center '}>
+                    <p className={' text-sm font-light sm:text-base text-[#F8F8FC]'}></p>
                     <span className=' text-sm  font-light sm:text-base text-[#BBBBBC]'>© 2024</span>
-                    <p className={' text-sm font-light sm:text-base text-[#F8F8FC]'}>hello.buyme.com</p>
+
                 </div>
             </div>
 

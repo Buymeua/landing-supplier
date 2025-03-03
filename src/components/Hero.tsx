@@ -4,9 +4,8 @@ import LinkButton from "./UI/Link";
 import {BackgroundCircles} from "./desing/Hero";
 import {ScrollParallax} from "react-just-parallax";
 import {motion} from "framer-motion";
-import {useTypingEffect} from "../hooks/useTypingEffect";
 import {Link} from 'react-scroll'
-import {AppleIcon, GooglePlayIcon} from "../icons";
+import {AppleIcon, GooglePlayIcon, WebBrowserIcon} from "../icons";
 
 export default function Hero({props}: any) {
     return (
@@ -78,22 +77,30 @@ export default function Hero({props}: any) {
                 </div>
 
                 {props.showStores &&
-                    <motion.div className=' mt-6 sm:mt-12 m-auto justify-center  flex gap-3'
+                    <motion.div className=' mt-6 flex-col sm:flex-row sm:mt-12 m-auto justify-center  flex gap-3'
 
                                 initial={{opacity: 0, y: 20}}
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: 1.2, delay: 0.6}}
                     >
-                        <a href={'https://apps.apple.com/ua/app/buymeua/id1417747760?l=ru'} target='_blank' className='py-2 sm:py-3 text-white group font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
+                        <a href={'https://apps.apple.com/ua/app/buymeua/id1417747760?l=ru'} target='_blank' className='py-2 justify-center sm:py-3 text-white group font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                             <AppleIcon/>
                             <span>App Store</span>
                             <div
                                 className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
 
                         </a>
-                        <a href={'https://play.google.com/store/apps/details?id=com.buymeuaa.buyme'} target='_blank' className='py-2 sm:py-3 group text-white font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
+                        <a href={'https://play.google.com/store/apps/details?id=com.buymeuaa.buyme'} target='_blank' className='py-2 sm:py-3 justify-center group text-white font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                             <GooglePlayIcon/>
                             <span>Google Play</span>
+                            <div
+                                className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
+
+                        </a>
+
+                        <a href={'https://web.buymeua.shop/'} target='_blank' className='py-2 sm:py-3 text-white group justify-center font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
+                            <WebBrowserIcon/>
+                            <span>У браузері</span>
                             <div
                                 className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
 

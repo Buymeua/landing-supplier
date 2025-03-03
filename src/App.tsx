@@ -23,6 +23,10 @@ export default function App() {
                     element={<Pages.Providers/>}
                 />
                 <Route
+                    path="/privacy-policy"
+                    element={<Pages.PrivacyPolicy />}
+                />
+                <Route
                     path="*"
                     element={<PageNotFound />}
                 />

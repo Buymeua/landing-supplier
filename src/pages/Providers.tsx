@@ -25,7 +25,6 @@ export default function Providers() {
             <PreviewFunc />
             <Integrations />
             <Slogan />
-            <ContactUs />
             <Feedback />
             <Faq />
         </>
