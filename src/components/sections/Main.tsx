@@ -13,7 +13,6 @@ export default function Main() {
                 <div className={'flex flex-col w-full sm:w-auto gap-[30px]'}>
                     <div className={'flex flex-col md:flex-row gap-4 md:gap-[30px]'}>
                         <IntegrationCard/>
-                        <ReferalCard/>
                     </div>
                     <StatisticCards/>
                 </div>

@@ -34,7 +34,7 @@ const IntegrationCard = () => {
     return (
         <motion.div
             ref={cardRef}
-            className="w-full md:w-[392px] relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-4 rounded-3xl text-white border border-[#373737]"
+            className="w-full relative z-10 px-4 py-6 bg-[#121314] flex flex-col gap-4 rounded-3xl text-white border border-[#373737]"
             initial={{opacity: 0, y: -40}}
             animate={isVisible ? {opacity: 1, y: 0} : {opacity: 0, y: -40}}
             transition={{duration: 0.7}}

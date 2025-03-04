@@ -27,6 +27,11 @@ export default function App() {
                     element={<Pages.PrivacyPolicy />}
                 />
                 <Route
+                    path="/offer"
+                    element={<Pages.Offer />}
+                />
+
+                <Route
                     path="*"
                     element={<PageNotFound />}
                 />
