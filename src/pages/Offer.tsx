@@ -4,7 +4,7 @@ import { BackgroundCircles } from "../components/desing/Hero";
 export default function Offer() {
     return (
         <div className="relative">
-            <div className="max-w-[1100px] pb-0 mx-auto px-4 sm:px-6 pt-8 sm:pt-20">
+            <div className="max-w-[1100px] mt-10 sm:mt-auto pb-0 mx-auto px-4 sm:px-6 pt-8 sm:pt-20">
                 <div className="absolute left-0 bg-pattern w-full h-[620px] top-[170px]" />
 
                 <div className="mt-4 relative z-10">
