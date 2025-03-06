@@ -10,7 +10,7 @@ import {AppleIcon, GooglePlayIcon, WebBrowserIcon} from "../icons";
 export default function Hero({props}: any) {
     return (
         <div className="relative">
-            <div className="max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
+            <div className="mt-10 sm:mt-auto max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
                 <BackgroundCircles/>
                 <ScrollParallax isAbsolutelyPositioned={false}>
                     {props.showCustomer && (
