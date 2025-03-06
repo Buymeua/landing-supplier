@@ -26,7 +26,7 @@ export default function Hero({props}: any) {
                                 <img className="-ml-2 w-6 sm:w-auto" src={Customer3} alt="customer"/>
                                 <img className="-ml-2 w-6 sm:w-auto" src={Customer4} alt="customer"/>
                             </div>
-                            <h1 className="text-xs sm:text-sm pr-1 sm:pr-6">Більше 1K задоволених користувачів.</h1>
+                            <h1 className="text-xs sm:text-sm pr-1 sm:pr-6">Більше 50К виконаних замовлень</h1>
                         </motion.div>
                     )}
                 </ScrollParallax>
@@ -61,17 +61,17 @@ export default function Hero({props}: any) {
                             <Button>{props.button.text}</Button>
                         </a>
                         <div>
-                            {props.link.href == 'about' ?
-                                <Link
-                                    to={'about'}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={40}
-                                    className="font-medium text-white underline hover:no-underline transition"
-                                > {props.link.text}</Link>
-                                :
-                                <LinkButton href={props.link.href}>{props.link.text}</LinkButton>
-                            }
+                            {/*{props.link.href == 'about' ?*/}
+                            {/*    <Link*/}
+                            {/*        to={'about'}*/}
+                            {/*        smooth={true}*/}
+                            {/*        duration={500}*/}
+                            {/*        offset={40}*/}
+                            {/*        className="font-medium text-white underline hover:no-underline transition"*/}
+                            {/*    > {props.link.text}</Link>*/}
+                            {/*    :*/}
+                            {/*    <LinkButton href={props.link.href}>{props.link.text}</LinkButton>*/}
+                            {/*}*/}
                         </div>
                     </motion.div>
                 </div>
