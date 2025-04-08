@@ -7,6 +7,8 @@ export { default as Home } from './Home';
 export { default as Providers } from './Providers';
 export { default as Offer } from './Offer';
 export { default as PrivacyPolicy } from './PrivacyPolicy';
+export { default as TermOfCooperation } from './TermOfCooperation';
+
 
 
 

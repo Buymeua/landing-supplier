@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import {ScrollToTop} from "./utils";
 import PageNotFound from "./pages/404Page";
 import useSetDocumentTitle from "./hooks/useSetDocumentTitle";
+import TermOfCooperation from "./pages/TermOfCooperation";
 
 export default function App() {
     useSetDocumentTitle();
@@ -30,6 +31,11 @@ export default function App() {
                     path="/offer"
                     element={<Pages.Offer />}
                 />
+                <Route
+                    path="/terms"
+                    element={<Pages.TermOfCooperation />}
+                />
+
 
                 <Route
                     path="*"

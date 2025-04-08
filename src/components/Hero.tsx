@@ -12,6 +12,14 @@ export default function Hero({props}: any) {
         <div className="relative">
             <div className="mt-10 sm:mt-auto max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
                 <BackgroundCircles/>
+                <motion.a
+                    initial={{opacity: 0, y: -20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 0.8}}
+                    href={'/terms'} className={'text-center gap-1 flex items-center relative  z-20 text-white text-base cursor-pointer  justify-center  mt-5'}>
+                    ✅<span className={'underline'}>Умови співробітництва</span>
+
+                </motion.a>
                 <ScrollParallax isAbsolutelyPositioned={false}>
                     {props.showCustomer && (
                         <motion.div

@@ -24,7 +24,8 @@ export default function NavBar() {
 
   const limitedNavigation = [
     { label: "Політика конфіденційності", path: "/privacy-policy" },
-    { label: "Публічна оферта", path: "/offer" }
+    { label: "Публічна оферта", path: "/offer" },
+    { label: "Умови співробітництва", path: "/terms" }
   ];
 
   const navigation = location.pathname === "/providers" ? fullNavigation : limitedNavigation;
