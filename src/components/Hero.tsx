@@ -1,10 +1,9 @@
 import {Customer1, Customer2, Customer3, Customer4} from "../assets";
 import Button from "./UI/Button";
-import LinkButton from "./UI/Link";
+import {Link} from "react-router-dom";
 import {BackgroundCircles} from "./desing/Hero";
 import {ScrollParallax} from "react-just-parallax";
 import {motion} from "framer-motion";
-import {Link} from 'react-scroll'
 import {AppleIcon, GooglePlayIcon, WebBrowserIcon} from "../icons";
 
 export default function Hero({props}: any) {
@@ -12,14 +11,19 @@ export default function Hero({props}: any) {
         <div className="relative">
             <div className="mt-10 sm:mt-auto max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
                 <BackgroundCircles/>
-                <motion.a
+                <motion.div
                     initial={{opacity: 0, y: -20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.8}}
-                    href={'/terms'} className={'text-center gap-1 flex items-center relative  z-20 text-white text-base cursor-pointer  justify-center  mt-5'}>
+                >
+                <Link
+                    className={'text-center gap-1 flex items-center relative  z-20 text-white text-base cursor-pointer  justify-center  mt-5'}
+                    to={'/terms'}
+                >
                     ✅<span className={'underline'}>Умови співробітництва</span>
+                </Link>
+                </motion.div>
 
-                </motion.a>
                 <ScrollParallax isAbsolutelyPositioned={false}>
                     {props.showCustomer && (
                         <motion.div

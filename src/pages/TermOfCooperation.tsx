@@ -31,8 +31,8 @@ export default function TermOfCooperation() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
-                        <p className="mb-4">• Відправки товару кожен день (вихідний неділя)</p>
-                        <p>• Замовлення прийняті до 13:00 їдуть того ж дня</p>
+                        <p className="mb-4">Відправки товару кожен день (вихідний неділя)</p>
+                        <p>Замовлення прийняті до 13:00 їдуть того ж дня</p>
                     </motion.div>
 
                     <div className="bg-[#1d1d1d80] rounded-xl shadow-lg p-6 mb-8">

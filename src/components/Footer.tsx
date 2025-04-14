@@ -1,7 +1,6 @@
 import {useLocation} from "react-router-dom";
 import React from "react";
 import Button from "./UI/Button";
-import {ArrowUpIcon} from "../icons";
 import {Link} from "react-scroll";
 import {Icon} from "@iconify/react";
 
