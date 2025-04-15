@@ -6,7 +6,7 @@ import {ScrollParallax} from "react-just-parallax";
 import {motion} from "framer-motion";
 import {AppleIcon, GooglePlayIcon, WebBrowserIcon} from "../icons";
 
-export default function Hero({props}: any) {
+export default function Hero({ props, handleFocus }: any) {
     return (
         <div className="relative">
             <div className="mt-10 sm:mt-auto max-w-[1096px] m-auto px-4 sm:px-0 py-2 sm:py-20">
@@ -95,14 +95,14 @@ export default function Hero({props}: any) {
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: 1.2, delay: 0.6}}
                     >
-                        <a href={'https://apps.apple.com/ua/app/buymeua/id1417747760?l=ru'} target='_blank' className='py-2 justify-center sm:py-3 text-white group font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
+                        <a onClick={handleFocus} className='py-2 justify-center sm:py-3 text-white group font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                             <AppleIcon/>
                             <span>App Store</span>
                             <div
                                 className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/20"></div>
 
                         </a>
-                        <a href={'https://play.google.com/store/apps/details?id=com.buymeuaa.buyme'} target='_blank' className='py-2 sm:py-3 justify-center group text-white font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
+                        <a onClick={handleFocus} className='py-2 sm:py-3 justify-center group text-white font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                             <GooglePlayIcon/>
                             <span>Google Play</span>
                             <div
@@ -110,7 +110,7 @@ export default function Hero({props}: any) {
 
                         </a>
 
-                        <a href={'https://web.buymeua.shop/'} target='_blank' className='py-2 sm:py-3 text-white group justify-center font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
+                        <a onClick={handleFocus} className='py-2 sm:py-3 text-white group justify-center font-medium text-sm sm:text-xl cursor-pointer relative z-10 border flex items-center gap-2 border-white  rounded-xl px-3 sm:px-5'>
                             <WebBrowserIcon/>
                             <span>У браузері</span>
                             <div

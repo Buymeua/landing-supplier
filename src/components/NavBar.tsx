@@ -65,7 +65,7 @@ export default function NavBar() {
 
   return (
       <>
-        <nav className="bg-[#191A1B] fixed top-0 left-0 w-full z-50 border-b border-b-[#FFFFFF1A] h-16 sm:h-20 flex items-center shadow-lg backdrop-blur-md">
+        <nav className="bg-[#191A1B] fixed top-0 left-0 w-full z-[100] border-b border-b-[#FFFFFF1A] h-16 sm:h-20 flex items-center shadow-lg backdrop-blur-md">
           <div className="page container">
             <div className="items-center flex justify-between w-full">
               <div className="flex items-center">
