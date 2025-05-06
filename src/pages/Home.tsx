@@ -23,9 +23,6 @@ export default function Home() {
                 <UsernameForm ref={usernameFormRef} />
             </div>
             <Main />
-            <button onClick={handleFocus} className="...">
-                <span>App Store</span>
-            </button>
         </>
     );
 }
