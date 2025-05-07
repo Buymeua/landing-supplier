@@ -35,9 +35,13 @@ const UsernameForm = forwardRef((_, ref) => {
         }
         return null;
     };
-
-    const processInput = (value:any) => {
+    const processInput = (value: any) => {
         let processed = value.trim();
+
+        const phoneRegex = /^\d{9,}$/; // Matches numbers with 9 or more digits
+        if (phoneRegex.test(processed.replace(/\s+/g, ''))) {
+            return processed.replace(/\s+/g, ''); // Return the phone number without spaces
+        }
 
         if (processed.startsWith('@ ')) {
             processed = '@' + processed.slice(2).replace(/\s+/g, '');
@@ -56,6 +60,7 @@ const UsernameForm = forwardRef((_, ref) => {
 
         return processed;
     };
+
 
     const validateAndFormatInput = (value:any) => {
         setUsername("");
@@ -97,30 +102,32 @@ const UsernameForm = forwardRef((_, ref) => {
         }
     };
 
-    const validatePhoneNumber = (value:any) => {
-        const digitsOnly = value.replace(/^\+/, 'PLUS').replace(/[^\d]/g, '').replace(/^PLUS/, '+');
+    const validatePhoneNumber = (value: string) => {
+        let cleaned = value.trim().replace(/\s|-/g, '');
 
-        let formattedPhone = digitsOnly;
-
-        if (formattedPhone.startsWith('0') && formattedPhone.length === 10) {
-            formattedPhone = `+38${formattedPhone}`;
+        if (cleaned.startsWith('+')) {
+            cleaned = '+' + cleaned.slice(1).replace(/\D/g, '');
+        } else {
+            cleaned = cleaned.replace(/\D/g, '');
         }
 
-        if (formattedPhone.length === 9 && !formattedPhone.startsWith('+')) {
-            formattedPhone = `+380${formattedPhone}`;
+        if (/^0\d{9}$/.test(cleaned)) {
+            cleaned = '+38' + cleaned;
         }
 
-        const phoneRegex = /^\+?380\d{9}$/;
+        const phoneRegex = /^\+380\d{9}$/;
 
-        if (phoneRegex.test(formattedPhone)) {
-            setPhone(formattedPhone);
+        if (phoneRegex.test(cleaned)) {
+            setPhone(cleaned);
             setInputType("phone");
             setIsValid(true);
-            setInput(formattedPhone);
+            setInput(cleaned);
         } else {
             setValidationError("Невалідний номер телефону. Підтримуються тільки українські номери у форматі +380XXXXXXXXX або 0XXXXXXXXX");
         }
     };
+
+
 
     const handleSubmit = async () => {
         if (!isValid) {
