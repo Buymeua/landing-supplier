@@ -8,7 +8,7 @@ const UsernameForm = forwardRef((_, ref) => {
     const [username, setUsername] = useState("");
     const [phone, setPhone] = useState("");
     const [isValid, setIsValid] = useState(false);
-    const [inputType, setInputType] = useState(""); // "username", "phone", or ""
+    const [inputType, setInputType] = useState("");
     const [success, setSuccess] = useState(false);
     const [loadingSubmit, setLoadingSubmit] = useState(false);
     const [errorMessages, setErrorMessages] = useState<any>([]);
@@ -38,9 +38,9 @@ const UsernameForm = forwardRef((_, ref) => {
     const processInput = (value: any) => {
         let processed = value.trim();
 
-        const phoneRegex = /^\d{9,}$/; // Matches numbers with 9 or more digits
+        const phoneRegex = /^\d{9,}$/;
         if (phoneRegex.test(processed.replace(/\s+/g, ''))) {
-            return processed.replace(/\s+/g, ''); // Return the phone number without spaces
+            return processed.replace(/\s+/g, '');
         }
 
         if (processed.startsWith('@ ')) {
@@ -142,14 +142,13 @@ const UsernameForm = forwardRef((_, ref) => {
         try {
             const payload = inputType === "username"
                 ? { telegram_user_name: username }
-                : { phone_number: phone };
+                : { telegram_user_name: phone };
 
             const response = await axios.post(
                 'https://buymeua.shop/api/v1/register-from-landing-page',
                 payload
             );
 
-            // Проверяем наличие поля success в ответе
             if (response.data && response.data.success === true) {
                 setInput('');
                 setUsername('');
@@ -158,7 +157,6 @@ const UsernameForm = forwardRef((_, ref) => {
                 setIsValid(false);
                 setSuccess(true);
             } else {
-                // Если success = false, обрабатываем в соответствии с кодом ошибки
                 if (response.data && response.data.code === 'tg_user_not_found') {
                     setErrorMessages(['Користувач Telegram не знайдений.']);
                 } else {
