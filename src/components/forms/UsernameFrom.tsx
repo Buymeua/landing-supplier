@@ -2,8 +2,11 @@ import React, {forwardRef, useImperativeHandle, useRef, useState, useEffect} fro
 import { motion } from "framer-motion";
 import Button from "../UI/Button";
 import axios from "axios";
+import {useStore} from "../../store/store";
 
 const UsernameForm = forwardRef((_, ref) => {
+    const selection = useStore((state) => state.selection);
+
     const [input, setInput] = useState("");
     const [username, setUsername] = useState("");
     const [phone, setPhone] = useState("");
@@ -23,8 +26,9 @@ const UsernameForm = forwardRef((_, ref) => {
     }));
 
     useEffect(() => {
+        console.log(selection, 'selection');
         validateAndFormatInput(input);
-    }, [input]);
+    }, [input , selection]);
 
     const extractUsernameFromLink = (value:string) => {
         const telegramLinkRegex = /(?:https?:\/\/)?t\.me\/([a-zA-Z0-9_]{5,32})/i;
@@ -140,9 +144,15 @@ const UsernameForm = forwardRef((_, ref) => {
         setErrorMessages([]);
 
         try {
-            const payload = inputType === "username"
-                ? { telegram_user_name: username }
-                : { telegram_user_name: phone };
+            const payload = {
+                ...(inputType === 'username'
+                        ? { telegram_user_name: username }
+                        : { telegram_user_name: phone }
+                ),
+                platform: selection?.platform ?? null,
+                action: selection?.action ?? null,
+            };
+
 
             const response = await axios.post(
                 'https://buymeua.shop/api/v1/register-from-landing-page',
@@ -185,7 +195,8 @@ const UsernameForm = forwardRef((_, ref) => {
     };
 
     return (
-        <div className="max-w-[1096px] relative z-50 sm:-mt-16 mx-4 sm:mx-auto sm:px-0 py-10">
+        <div  className="max-w-[1096px] relative z-50 sm:-mt-16 mx-4 sm:mx-auto sm:px-0 py-10">
+            {selection?.platform ?
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -224,7 +235,8 @@ const UsernameForm = forwardRef((_, ref) => {
                                     value={input}
                                     onChange={(e) => setInput(e.target.value)}
                                     className={`bg-transparent w-full border-b ${validationError ? 'border-red-500' : 'border-[#4A4A59]'} 
-                                      text-white focus:outline-none py-2`}
+  text-white focus:outline-none focus:border-white focus:rounded-full p-4 focus:ring-1 focus:ring-white py-2`}
+
                                 />
                                 {validationError && (
                                     <motion.p
@@ -294,6 +306,8 @@ const UsernameForm = forwardRef((_, ref) => {
                     </div>
                 </div>
             </motion.div>
+                : null
+            }
         </div>
     );
 });
