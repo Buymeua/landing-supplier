@@ -19,7 +19,7 @@ export default function Providers() {
                 className="progress-bar"
                 style={{scaleX: scrollYProgress}}
             />
-            <Hero props={providersConfig}/>
+            <Hero props={providersConfig} handleFocus={() => {}} />
             <OptimizationData/>
             <FeatureHighlight/>
             <PreviewFunc />
